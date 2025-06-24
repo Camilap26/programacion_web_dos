@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SER Beauty</title>
+    <style>
+      body {
+        background-color: #fff0f5; /* rosa pastel */
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #ca8aaa; /* rosa fuerte */
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      .contenido {
+        padding: 30px;
+      }
+
+      ul {
+        list-style-type: square;
+        color: #cc3366;
+      }
+
+      form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        margin-top: 20px;
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        background-color: #ff69b4;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-top: 15px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #e75494;
+      }
+
+      footer {
+        background-color: #000;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>SER Beauty</h1>
+      <p>Eres belleza, eres tú</p>
+    </header>
+
+    <div class="contenido">
+      <h3>Sobre nosotros</h3>
+      <p>ERSA es una marca creada para resaltar tu belleza auténtica con tecnología de maquillaje práctico y rápido. ¡Descubre una nueva forma de brillar cada día!</p>
+
+      <h3>Nuestros productos</h3>
+      <ul>
+        <li>Mascarillas inteligentes de maquillaje</li>
+        <li>Spray activador</li>
+        <li>Skins personalizadas</li>
+        <li>Labiales instantáneos</li>
+      </ul>
+
+      <h3>Contáctanos</h3>
+      <form>
+        <label for="nombre">Ingrese su nombre</label>
+        <input type="text" id="nombre" required />
+
+        <label for="apellido">Ingrese su apellido</label>
+        <input type="text" id="apellido" required />
+
+        <label for="edad">Ingrese su edad</label>
+        <input type="number" id="edad" required />
+
+        <label for="correo">Ingrese su correo</label>
+        <input type="email" id="correo" required />
+
+        <button type="button" onclick="mostrarDatos()">Enviar</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 ERSA Beauty - Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+      function mostrarDatos() {
+        const nombre = document.getElementById("nombre").value;
+        const apellido = document.getElementById("apellido").value;
+        const edad = document.getElementById("edad").value;
+        const correo = document.getElementById("correo").value;
+
+        alert(
+          "Nombre: " + nombre +
+          "\nApellido: " + apellido +
+          "\nEdad: " + edad +
+          "\nCorreo: " + correo
+        );
+      }
+    </script>
+  </body>
+</html>
